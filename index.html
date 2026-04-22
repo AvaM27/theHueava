@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The HUE</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/Inspo.css">
+  <style>
+
+body {
+  background-color: #f4f2ed;
+  color: #1f1f1f;
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#main-nav {
+  padding: 20px 30px;
+}
+
+/* nav links */
+#main-nav a,
+#main-nav a:visited {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+#site-title {
+  text-align: center;
+  margin-top: 120px;
+}
+
+#site-title h1 {
+  font-size: 90px;
+  color: #1f1f1f;
+  margin: 0;
+  font-weight: 400;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.hue-word {
+  margin-left: -8px;
+}
+.intro-text {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #1f1f1f;
+}
+
+#palette-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.swatch-link {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.colour-swatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.colour-block {
+  width: 120px;
+  height: 120px;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.swatch-link:hover .colour-block {
+  transform: scale(1.05);
+  filter: brightness(1.06);
+  cursor: pointer;
+}
+
+.hex {
+  transform: none;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  color: #1f1f1f;
+  padding: 4px 8px;
+  margin-top: 10px;
+}
+
+.hex:hover {
+  background-color: #1f1f1f;
+  color: #f4f2ed;
+}
+
+.colour1 { background-color: #6b2c43; }
+.colour2 { background-color: #a3c7ec; }
+.colour3 { background-color: #a09c33; }
+.colour4 { background-color: #ffbaec; }
+.colour5 { background-color: #fd6f2f; }
+.colour6 { background-color: #f8e6a0; }
+
+@media screen and (max-width: 480px) {
+
+  #palette-section {
+    width: 90%;
+    margin: 40px auto 0 auto;
+    justify-content: center;
+    gap: 15px;
+  }
+  .hex {
+    transform: none;
+    white-space: nowrap;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  #site-title h1 {
+    font-size: 72px;
+  }
+
+}
+</style>
+</head>
+<body>
+
+  <div id="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <div id="site-title">
+    <h1>The <span class="hue-word">HUE</span></h1>
+    <p class="intro-text">A language of colour.</p>
+  </div>
+
+  <div id="palette-section">
+
+    <a href="colour1.html" class="swatch-link">
+      <div class="colour-swatch">
+        <div class="colour-block colour1"></div>
+        <p class="hex">[ #6b2c43 ]</p>
+      </div>
+    </a>
+
+    <a href="colour2.html" class="swatch-link">
+      <div class="colour-swatch">
+        <div class="colour-block colour2"></div>
+        <p class="hex">[ #a3c7ec ]</p>
+      </div>
+    </a>
+
+    <a href="colour3.html" class="swatch-link">
+      <div class="colour-swatch">
+        <div class="colour-block colour3"></div>
+        <p class="hex">[ #a09c33 ]</p>
+      </div>
+    </a>
+
+    <a href="colour4.html" class="swatch-link">
+      <div class="colour-swatch">
+        <div class="colour-block colour4"></div>
+        <p class="hex">[ #ffbaec ]</p>
+      </div>
+    </a>
+
+    <a href="colour5.html" class="swatch-link">
+      <div class="colour-swatch">
+        <div class="colour-block colour5"></div>
+        <p class="hex">[ #fd6f2f ]</p>
+      </div>
+    </a>
+
+    <a href="colour6.html" class="swatch-link">
+      <div class="colour-swatch">
+        <div class="colour-block colour6"></div>
+        <p class="hex">[ #f8e6a0 ]</p>
+      </div>
+    </a>
+
+  </div>
+
+</body>
+</html>

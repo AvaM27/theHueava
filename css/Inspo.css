@@ -1,0 +1,134 @@
+/* popup box*/
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 999;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* the content box */
+.popup-content {
+  background-color: #f4f2ed;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 26px;
+  border-radius: 26px;
+  text-align: center;
+  position: relative;
+}
+/* close*/
+
+#close-popup {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #1f1f1f;
+}
+
+/* top swatches */
+.popup-swatches {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.popup-colour {
+  width: 90px;
+  height: 90px;
+  border-radius: 26px;
+}
+
+.popup-plus {
+  font-size: 24px;
+  color: #1f1f1f;
+}
+
+/* Texts */
+
+#popup-title {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #1f1f1f;
+}
+#popup-hex {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1f1f1f;
+}
+#popup-description {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #1f1f1f;
+}
+
+/* Inspo sec */
+
+#popup .inspo-section {
+  width: 100%;
+  margin-top: 32px;
+}
+
+#popup .inspo-title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  margin-bottom: 8px;
+}
+
+#popup .inspo-subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #1f1f1f;
+  max-width: 420px;
+  margin: 0 auto 16px auto;
+}
+
+#popup .inspo-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 8px;
+  flex-wrap: nowrap;
+}
+
+#popup .inspo-grid img {
+  flex: 0 0 auto;
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background-color: white;
+  display: block;
+  box-sizing: border-box;
+  max-width: none;
+}
+#popup .inspo-grid img:hover {
+  transform: scale(1.02);
+  opacity: 0.95;
+}
+
+/* scrrens  */
+
+@media (max-width: 768px) {
+  #popup .inspo-grid img {
+    width: 140px;
+    height: 180px;
+  }
+}
